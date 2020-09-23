@@ -94,3 +94,8 @@ export const CardListItem = styled.div`
     place-items: center;
     margin: .3rem;
 `
+
+export const CardTotalElement = styled.div`
+    display: grid;
+    margin: .5rem;
+`
