@@ -10,7 +10,6 @@ export const MainContainer = styled.div`
 `
 
 export const Card = styled.div`
-    min-width: 100%;
     background: #5D5C61;
     border-radius: 2%;
     display: grid;
@@ -40,13 +39,15 @@ export const CardFormLabel = styled.label`
 `
 
 export const CardFormButton = styled.div`
+    
     background: #5D5C61;
     color: #ffffff;
-    padding: .3rem;
+    padding: .5rem 3rem .5rem;
     margin: .3rem;
-    border-radius: 20%;
+    border-radius: 5%;
     cursor: pointer;
     transition: ease 0.5s;
+    grid-area: 3 / 1 / span 1 / span 2;  
 
     :hover {
         color: #5D5C61;
@@ -70,10 +71,10 @@ export const CardFormBody = styled.div`
     background-color: #557A95;
     border: .1rem solid #ffffffff;
     color: #ffffff;
-    width: 100%;
     display: grid;
-    grid-template-columns: repeat( 3, 1fr);
+    grid-template-columns: repeat( 2, 1fr);
     grid-gap: .05em;
     place-items: center;
     margin: .8rem;
+    padding: .5rem;
 `
