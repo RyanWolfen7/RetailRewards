@@ -10,7 +10,7 @@ const CalculatorForm = props => {
     }
 
     return (
-        <Card>
+        <Card fit>
             <CardHeader> Add Mock Item </CardHeader>
             <CardBody>
                 <CardFormBody>

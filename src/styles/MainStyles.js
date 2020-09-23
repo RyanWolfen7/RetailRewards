@@ -16,10 +16,11 @@ export const Card = styled.div`
     display: grid;
     transition: .5s, 1s;
     margin: 2rem 0 0;
-    width: 100%;
+    width: ${ props => props.fit ? 'fit-content' : '100%'};
     height: fit-content;
     ${ props => props.inverse ? 'border: .2rem solid #5D5C61;' : ''}
     ${ props => props.row ? `grid-area: 1 / 2 / span ${props.row} / span 1;` : ''}
+    ${ props => props.fit ? 'place-self: center;' : '' }
 `
 
 export const CardHeader = styled.h1`
