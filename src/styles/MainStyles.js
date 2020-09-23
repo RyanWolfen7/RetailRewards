@@ -58,6 +58,12 @@ export const CardForm = styled.input`
     background: #7395AE;
     border: .5rem solid #557A95;
     width: fit-content;
+    color: #ffffff;
+    
+    ::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
 `
 
 export const CardFormBody = styled.div`
