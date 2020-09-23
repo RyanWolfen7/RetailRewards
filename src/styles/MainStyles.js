@@ -1,4 +1,6 @@
 import styled from 'styled-components'
+import { FaRegTrashAlt } from 'react-icons/fa'
+
 
 export const MainContainer = styled.div`
     grid-area: 2 / 1 / span 9 / span 5;
@@ -98,4 +100,14 @@ export const CardListItem = styled.div`
 export const CardTotalElement = styled.div`
     display: grid;
     margin: .5rem;
+`
+
+export const CardDelete = styled(FaRegTrashAlt)`
+    cursor: pointer;
+    transition: ease 0.5s;
+
+    :hover {
+        color: red;
+    }
+
 `

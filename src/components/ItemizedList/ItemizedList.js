@@ -1,6 +1,5 @@
 import React from 'react'
-import { Card, CardListBody, CardHeader, CardListItem, CardFormButton } from '../../styles/MainStyles'
-import { FaRegTrashAlt } from 'react-icons/fa'
+import { Card, CardListBody, CardHeader, CardListItem, CardDelete } from '../../styles/MainStyles'
 
 const ItemizedList = props => {
     const { items, deleteFromList } = props
@@ -11,7 +10,7 @@ const ItemizedList = props => {
                 <CardListItem key={item.id}> 
                     <div> Name: {item.name} </div>
                     <div> $ {Number(item.price)} </div>
-                    <FaRegTrashAlt onClick={() => deleteFromList(item.id)}/>
+                    <CardDelete onClick={() => deleteFromList(item.id)}/>
                 </CardListItem>
             )
         })
