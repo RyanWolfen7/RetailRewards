@@ -12,11 +12,18 @@ const MainView = props => {
         itemData.id = itemData.name + itemData.price
         setItems([...items, ...[itemData]])
     }
-    console.log(items)
+
+    const deleteFromList = id => {
+        let itemsClone = [...items]
+        const removeIndex = itemsClone.map(item => item.id).indexOf(id)
+        itemsClone.splice(removeIndex, 1)
+        setItems(itemsClone)
+    }
+
     return (
         <MainContainer>
             <CalculatorForm addToList={addToList}/>
-            <ItemizedList items={items}/>
+            <ItemizedList items={items} deleteFromList={deleteFromList}/>
         </MainContainer>
     )
 }

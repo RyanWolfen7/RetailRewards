@@ -3,7 +3,7 @@ import { Card, CardListBody, CardHeader, CardListItem, CardFormButton } from '..
 import { FaRegTrashAlt } from 'react-icons/fa'
 
 const ItemizedList = props => {
-    const { items } = props
+    const { items, deleteFromList } = props
 
     const renderItems = () => {
         return items.map( item => {
@@ -11,7 +11,7 @@ const ItemizedList = props => {
                 <CardListItem key={item.id}> 
                     <div> Name: {item.name} </div>
                     <div> $ {Number(item.price)} </div>
-                    <FaRegTrashAlt/>
+                    <FaRegTrashAlt onClick={() => deleteFromList(item.id)}/>
                 </CardListItem>
             )
         })
