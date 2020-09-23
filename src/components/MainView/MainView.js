@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { MainContainer } from '../../styles/MainStyles'
 import { withRouter } from 'react-router-dom'
 import CalculatorForm from '../CalculatorForm/CalculatorForm'
+import ItemizedList from '../ItemizedList/ItemizedList'
 
 const MainView = props => {
     const [ items, setItems ] = useState([])
@@ -15,6 +16,7 @@ const MainView = props => {
     return (
         <MainContainer>
             <CalculatorForm addToList={addToList}/>
+            <ItemizedList />
         </MainContainer>
     )
 }
