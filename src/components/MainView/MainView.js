@@ -4,10 +4,17 @@ import { withRouter } from 'react-router-dom'
 import CalculatorForm from '../CalculatorForm/CalculatorForm'
 
 const MainView = props => {
-    
+    const [ items, setItems ] = useState([])
+
+    const addToList = item => {
+        let itemData = {...item}
+        itemData.id = itemData.name + itemData.price
+        setItems([...items, ...[itemData]])
+    }
+
     return (
         <MainContainer>
-            <CalculatorForm />
+            <CalculatorForm addToList={addToList}/>
         </MainContainer>
     )
 }
