@@ -3,10 +3,10 @@ import { GiHamburgerMenu } from 'react-icons/gi'
 
 
 export const NavContainer = styled.div`
-    background-color: #C38D9E;
-    background: #C38D9E -webkit-gradient(linear, left top, left bottom, from(#1E8D7D, 10%), to(#C38D9E, 100%)) no-repeat;
-    background: #C38D9E -moz-linear-gradient(top, #1E8D7D, #C38D9E) no-repeat;
-    filter: progid:DXImageTransforme.Microsoft.gradient(startColorstr=#1E8D7D, endColorstr=#C38D9E) no-repeat;
+    background-color: #B1A296;
+    background: #B1A296 -webkit-gradient(linear, left top, left bottom, from(#938E94, 10%), to(#B1A296, 100%)) no-repeat;
+    background: #B1A296 -moz-linear-gradient(top, #938E94, #B1A296) no-repeat;
+    filter: progid:DXImageTransforme.Microsoft.gradient(startColorstr=#938E94, endColorstr=#B1A296) no-repeat;
     -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#B34151, endColorstr=#B34151)" no-repeat;
     color: #FFFFFF;
     grid-area: 1 / 1 / span 1 / span 6;
@@ -28,7 +28,7 @@ export const Title = styled.div`
     :hover {
         opacty: .8;
         background-color: #FFFFFF;
-        color: #C38D9E;
+        color: #B1A296;
         padding: auto;
         border-radius: 2%;
     }
@@ -43,7 +43,7 @@ export const Hamburger = styled(GiHamburgerMenu)`
     :hover {
         opacty: .8;
         background-color: #FFFFFF;
-        color: #C38D9E;
+        color: #B1A296;
         padding: auto;
         border-radius: 5%;
     }
@@ -56,7 +56,7 @@ export const SideNav = styled.div`
     z-index: 1;
     top: 0;
     left: 0;
-    background-color: #E27D60;
+    background-color: #557A95;
     overflow-x: hidden;
     dispay: grid;
     place-items: center;
@@ -99,8 +99,8 @@ export const SideNavElement = styled.div`
     }
 
     a:hover {
-        color: #CFFFF8;
-        background: #41B3A3;
+        color: #5D5C61;
+        background: #938E94;
         padding: auto;
         border-radius: 3%;
     }
