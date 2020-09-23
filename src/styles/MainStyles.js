@@ -6,16 +6,20 @@ export const MainContainer = styled.div`
     grid-gap: 1em;
     margin: 0;
     grid-template-columns: repeat( 2, 1fr);
-    place-items: center;
+    grid-template-rows: auto;
 `
 
 export const Card = styled.div`
-    background: #5D5C61;
+    background: ${ props => props.inverse ? '#ffffff' : '#5D5C61'} ;
+    color: ${ props => props.inverse ? '#5D5C61' : '#ffffff'};
     border-radius: 2%;
     display: grid;
     transition: .5s, 1s;
-    margin: 2rem;
-    width: ;
+    margin: 2rem 0 0;
+    width: 100%;
+    height: fit-content;
+    ${ props => props.inverse ? 'border: .2rem solid #5D5C61;' : ''}
+    ${ props => props.row ? `grid-area: 1 / 2 / span ${props.row} / span 1;` : ''}
 `
 
 export const CardHeader = styled.h1`
@@ -23,7 +27,7 @@ export const CardHeader = styled.h1`
     display: grid;
     place-items: center;
     border-radius: 2%;
-    color: white;
+    height: min-content;
 `
 
 export const CardBody = styled.div`

@@ -1,9 +1,14 @@
 import React from 'react'
+import { Card, CardBody, CardHeader } from '../../styles/MainStyles'
 
 const ItemizedList = props => {
 
     return (
-        <h1> works </h1>
+        <Card inverse row={4}> 
+            <CardHeader> Item List </CardHeader>
+            <CardBody color=''>        
+            </CardBody>
+        </Card>
     )
 }
 
