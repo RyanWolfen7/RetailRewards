@@ -82,3 +82,14 @@ export const CardFormBody = styled.div`
     margin: .8rem;
     padding: .5rem;
 `
+
+export const CardListBody = styled.div`
+    display: grid;
+`
+
+export const CardListItem = styled.div`
+    display: grid;
+    grid-template-columns: repeat( 3, 1fr);
+    place-items: center;
+    margin: .3rem;
+`

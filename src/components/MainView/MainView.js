@@ -12,11 +12,11 @@ const MainView = props => {
         itemData.id = itemData.name + itemData.price
         setItems([...items, ...[itemData]])
     }
-
+    console.log(items)
     return (
         <MainContainer>
             <CalculatorForm addToList={addToList}/>
-            <ItemizedList />
+            <ItemizedList items={items}/>
         </MainContainer>
     )
 }
