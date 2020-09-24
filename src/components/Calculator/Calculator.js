@@ -15,7 +15,8 @@ const Calculator = props => {
             const singlePoint = 50
             return doublePoint + singlePoint
         } else {
-            return totalPrice - 50
+            const value = totalPrice - 50
+            return value > 0 ? value : 0
         }
     }
 
