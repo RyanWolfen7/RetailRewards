@@ -17,7 +17,7 @@ const ItemizedList = props => {
     }
 
     return (
-        <Card inverse row={4}> 
+        <Card inverse row={items.length}> 
             <CardHeader> Item List </CardHeader>
             <CardListBody>
                 {items && renderItems()}
