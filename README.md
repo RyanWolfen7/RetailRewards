@@ -2,7 +2,7 @@
 
 ## About
 
-This is a tech test I did in about 4h in my free time. It's pretty basic and doesn't have much functionality. I didn't really get everything I wanted to done. This is the prompt
+This is a tech test I did in about 4h in my free time (2h total). It's pretty basic and doesn't have much functionality. I didn't really get everything I wanted to done. This is the prompt
 
 ```
     A retailer offers a rewards program to its customers, awarding points based on each recorded purchase.
