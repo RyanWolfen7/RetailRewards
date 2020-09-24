@@ -12,8 +12,10 @@ const Calculator = props => {
         const totalPrice = items.reduce( (t , item) => t + Number(item.price), 0)
         if(totalPrice >= 100) {
             const doublePoint = (totalPrice - 100) * 2
-            const singlePoint = (totalPrice - 50) 
+            const singlePoint = 50
             return doublePoint + singlePoint
+        } else {
+            return totalPrice - 50
         }
     }
 
