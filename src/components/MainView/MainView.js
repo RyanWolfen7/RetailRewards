@@ -10,7 +10,7 @@ const MainView = props => {
 
     const addToList = item => {
         let itemData = {...item}
-        itemData.id = itemData.name + itemData.price
+        itemData.id = items.length + 1
         setItems([...items, ...[itemData]])
     }
 
